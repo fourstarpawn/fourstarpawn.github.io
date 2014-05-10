@@ -46,9 +46,9 @@ header{
    top: 205px; 
    left: 0; 
    width: 100%;
-   color: white; 
+   color: #001f3f; 
    letter-spacing: -1px;
-   background: rgba(255, 220, 0, 0.5);}
+   background: rgba(255, 220, 0, 0.7);}
 textarea {
     width: 90%;}
 footer {
