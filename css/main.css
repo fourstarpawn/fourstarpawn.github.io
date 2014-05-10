@@ -55,3 +55,25 @@ footer {
     color: #ffffff;
     background-color: #3d9970;
     border: 1px solid #111111;}
+
+@media only screen and (min-width: 480px) {
+    .image h1 { 
+   position: absolute; 
+   top: 350px; 
+   left: 0; 
+   width: 100%;
+   color: #001f3f; 
+   letter-spacing: -1px;
+   background: rgba(255, 220, 0, 0.7);}
+}
+
+@media only screen and (min-width: 1024px) {
+    .image h1 { 
+   position: absolute; 
+   top: 700px; 
+   left: 0; 
+   width: 100%;
+   color: #001f3f; 
+   letter-spacing: -1px;
+   background: rgba(255, 220, 0, 0.7);}
+}
