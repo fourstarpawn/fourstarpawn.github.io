@@ -1,79 +1,122 @@
 * {
-    box-sizing: border-box;}
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 html {
     font-family: Arial, Verdana, sans-serif;
     text-align: center;
-    background-color: #3d9970;
-    line-height: 1.4;}
-iframe {
-    width: 100%;
-    padding: 0.0em;}
+    background-color: white;
+    line-height: 1.4;
+}
+
+header {
+    color: darkgreen;
+    background-color: gold;
+    padding: .25em;
+    border-radius: 10px;
+}
+
 img {
-    width: 100%;}
-span {
-    font-weight: bold;}
-.button{
-    background-color: #001f3f;
-    padding: .25em;}
-.button a {
-    color: white;}
-header{
-    color: #ffffff;
-    background-color: #3d9970;
-    padding: .5em;}
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image {
+    position: relative;
+    width: 100%; /*for IE 6*/
+    background-color: darkgreen;
+    color: gold;
+    border-radius: 10px;
+}
+
+.button {
+    background-color: #ff6a00;
+    padding: .25em;
+    border-radius: 10px;
+}
+
 .retail {
-    color: #ffffff;
-    background-color: #3d9970;
-    padding: 1.0em;}
+    color: darkgreen;
+    background-color: gold;
+    font-size: 1.25em;
+    padding: .5em;
+    border-radius: 10px;
+}
+
+.hours {
+    color: darkgreen;
+    background-color: gold;
+    font-size: 1.25em;
+    padding: .5em;
+}
+
 .location {
     color: #111111;
     background-color: #ffffff;
-    padding: .5em;}
-.hours {
-    color: #ffffff;
-    background-color: #3d9970;
     font-size: 1.25em;
-    padding: .5em;}
-.comment {
-    border: 1px solid #111111;}
-.contact {
-    border: 1px solid #111111;}
-.image { 
-   position: relative; 
-   width: 100%; /* for IE 6 */}
-.image h1 { 
-   position: absolute; 
-   top: 205px; 
-   left: 0; 
-   width: 100%;
-   color: #001f3f; 
-   letter-spacing: -1px;
-   background: rgba(255, 220, 0, 0.7);}
-textarea {
-    width: 90%;}
-footer {
-    color: #ffffff;
-    background-color: #3d9970;
-    border: 1px solid #111111;}
-
-@media only screen and (min-width: 480px) {
-    .image h1 { 
-   position: absolute; 
-   top: 350px; 
-   left: 0; 
-   width: 100%;
-   color: #001f3f; 
-   letter-spacing: -1px;
-   background: rgba(255, 220, 0, 0.7);}
+    padding: .5em;
 }
 
-@media only screen and (min-width: 1024px) {
-    .image h1 { 
-   position: absolute; 
-   top: 700px; 
-   left: 0; 
-   width: 100%;
-   color: #001f3f; 
-   letter-spacing: -1px;
-   background: rgba(255, 220, 0, 0.7);}
+.comment {
+    border: 1px solid #111111;
+}
+
+.contact {
+    border: 1px solid #111111;
+}
+
+footer {
+    color: darkgreen;
+    background-color: gold;
+    border: 1px solid #111111;
+    border-radius: 10px;
+}
+
+iframe {
+    width: 100%;
+    padding: 0.0em;
+}
+
+span {
+    font-weight: bold;
+}
+
+textarea {
+    width: 90%;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 768px) {
+    .retailhours {
+        display: none;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+    .container {
+        display: -webkit-flex;
+        display: flex;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        width: 80%;
+        margin: auto;
+    }
+
+    .button, .hours, .comment, .contact {
+        display: none;
+    }
+
+    header, .headline, footer {
+        width: 100%;
+        margin: auto;
+    }
+
+    .image, .retail, .location {
+        width: 50%;
+        margin: auto;
+    }
 }
